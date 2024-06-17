@@ -93,6 +93,8 @@ function sendMail() {
   var params = {
     from_name: document.getElementById("full-name").value,
     Email: document.getElementById("Email").value,
+    reply_to: document.getElementById("Email").value,// Ensure reply_to is set to sender's email
+
     message: document.getElementById("message").value
   };
 
