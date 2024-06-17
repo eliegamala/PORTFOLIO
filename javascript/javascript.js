@@ -87,3 +87,18 @@ sections.forEach(current =>{
 })
 }
 window.addEventListener('scroll', scrollActive)
+
+/*--------- EMAIL ---------- */
+function sendMail() {
+  var params = {
+    from_name: document.getElementById("full-name").value,
+    Email: document.getElementById("Email").value,
+    message: document.getElementById("message").value
+  };
+
+  emailjs.send("service_5kmmab4", "template_gx9ns46", params).then(function(res) {
+    alert("Success! " + res.status);
+  }).catch(function(err) {
+    alert("Failed to send message. " + err);
+  });
+}
