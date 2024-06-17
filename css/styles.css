@@ -116,6 +116,7 @@ nav{
 .nav-menu-btn i{
     font-size: 28px;
     cursor: pointer;
+    color: var(--color-white);
 }
 .active-link{
     position: relative;
@@ -319,7 +320,8 @@ h3{
     border-radius: 30px;
 }
 .about-btn button:hover{
-    background: var(--first-color-hover);
+    background: var(--color-white);
+    color: var(--body-color);
 }
 /* ----- ABOUT / SKILLS BOX ----- */
 .skills-box{
@@ -369,6 +371,7 @@ h3{
 .project-details h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  color: var(--body-color);
 }
 
 .project-details p {
@@ -386,7 +389,8 @@ h3{
 }
 
 .project-details .btn:hover {
-  background-color: #0056b3;
+    background: var(--color-white);
+    color: var(--body-color);
 }
 
 .language-bubbles {
@@ -416,8 +420,13 @@ h3{
   transition: background-color 0.3s, color 0.3s;
 }
 
+a{
+    text-decoration: none;
+    color: #000;
+}
 .see-more-btn .btn:hover {
-  background-color: var(--first-color-hover);
+    background: var(--color-white);
+    color: var(--body-color);
 }
 .contact-info::after{
     content: "";
@@ -519,7 +528,8 @@ textarea{
     color: var(--color-white);
 }
 .form-button>.btn:hover{
-    background: #00B5E7;
+    background: var(--color-white);
+    color: var(--body-color);
 }
 .form-button i{
     font-size: 18px;
